@@ -11,10 +11,10 @@ function move(node, refpt, amount, unit) {
 }
 
 function moveDodgerLeft() {
-  node = dodger;
-  refpt = 'left';
-  amount = '1';
-  unit = 'pt';
+  const node = dodger;
+  const refpt = 'left';
+  const amount = '1';
+  const unit = 'pt';
   let val = node.style[refpt].replace(unit, '');
   val = parseInt(val, 10);
   
