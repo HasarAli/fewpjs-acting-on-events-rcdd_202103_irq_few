@@ -5,12 +5,9 @@ function move(node, refpt, amount, unit) {
   const nodeWidth = node.offsetWidth;
   const parentWidth = node.parentNode.offsetWidth
   
-  return new Promise((resolve, reject) => {
-    if (val - amount >= 0 && val - amount <= parentWidth - nodeWidth)
-      resolve(node.style[refpt] = `${val - amount}${unit}`);
-    else
-      reject();
-  }) 
+  
+  if (val - amount >= 0 && val - amount <= parentWidth - nodeWidth)
+    node.style[refpt] = `${val - amount}${unit}`;
 }
 
 function moveDodgerLeft() {
