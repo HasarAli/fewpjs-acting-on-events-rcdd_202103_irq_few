@@ -8,6 +8,7 @@ function move(node, refpt, amount, unit) {
   
   if (val - amount >= 0 && val - amount <= parentWidth - nodeWidth)
     node.style[refpt] = `${val - amount}${unit}`;
+  return 
 }
 
 function moveDodgerLeft() {
