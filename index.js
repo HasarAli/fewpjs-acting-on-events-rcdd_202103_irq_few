@@ -14,7 +14,7 @@ function move(node, refpt, amount, unit) {
 }
 
 function moveDodgerLeft() {
-  return move(dodger, 'left', '1', 'px');
+  return await move(dodger, 'left', '1', 'px');
 }
 
 function moveDodgerRight() {
