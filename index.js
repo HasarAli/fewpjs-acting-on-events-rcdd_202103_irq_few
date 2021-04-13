@@ -12,6 +12,15 @@ function move(node, refpt, amount, unit) {
 
 function moveDodgerLeft() {
   return move(dodger, 'left', '1', 'px');
+  let val = node.style[refpt].replace(unit, '');
+  val = parseInt(val, 10);
+  
+  const nodeWidth = node.offsetWidth;
+  const parentWidth = node.parentNode.offsetWidth
+  
+  
+  if (val - amount >= 0 && val - amount <= parentWidth - nodeWidth)
+    node.style[refpt] = `${val - amount}${unit}`;
 }
 
 function moveDodgerRight() {
