@@ -11,11 +11,11 @@ function move(node, refpt, amount, unit) {
 }
 
 function moveDodgerLeft() {
-  move(dodger, 'left', '1', 'px');
+  return move(dodger, 'left', '1', 'px');
 }
 
 function moveDodgerRight() {
-  move(dodger, 'left', '-1', 'px');
+  return move(dodger, 'left', '-1', 'px');
 }
 
 
